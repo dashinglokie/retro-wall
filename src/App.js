@@ -95,25 +95,25 @@ class App extends Component {
         <br />
         <div className="text-center">
           <div className={"row"}>
-            <Category cards={this.state.Cards.filter((card)=>card.type === "What went well")} 
+            <Category cards={this.state.Cards} 
               MoveLeft={this.MoveLeft} MoveRight={this.MoveRight} userInput={this.userInput}
               Delete={this.Delete}
               categoryLabel={"What went well"}
               categoryColor={"wentWell"}
               onClick={() => this.CreateCard("What went well", "")} />
-            <Category cards={this.state.Cards.filter((card)=>card.type === "What can be improved")} 
+            <Category cards={this.state.Cards} 
               MoveLeft={this.MoveLeft} MoveRight={this.MoveRight} userInput={this.userInput}
               Delete={this.Delete}
               categoryLabel={"What can be improved"}
               categoryColor={"toImprove"}
               onClick={() => this.CreateCard("What can be improved", "")} />
-            <Category cards={this.state.Cards.filter((card)=>card.type === "Start doing")} 
+            <Category cards={this.state.Cards} 
               MoveLeft={this.MoveLeft} MoveRight={this.MoveRight} userInput={this.userInput}
               Delete={this.Delete}
               categoryLabel={"Start doing"}
               categoryColor={"startDoing"}
               onClick={() => this.CreateCard("Start doing", "")} />
-            <Category cards={this.state.Cards.filter((card)=>card.type === "Action items")} 
+            <Category cards={this.state.Cards} 
               MoveLeft={this.MoveLeft} MoveRight={this.MoveRight} userInput={this.userInput}
               Delete={this.Delete}
               categoryLabel={"Action items"}
